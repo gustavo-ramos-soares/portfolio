@@ -156,14 +156,13 @@ nav ul li {
 }
 
 .titulosHome h1 {
-    color: var(--cor-white);
-    font-size: clamp(2.3rem, 4vw, 4.5rem);
+    font-size: clamp(2rem, 2vw + 1.5rem, 3.5rem);
     letter-spacing: -1px;
 }
 
 .titulosHome h2 {
     color: var(--cor02);
-    font-size: clamp(1rem, 2.5vw, 1.7rem);
+    font-size: clamp(1rem, 1vw + 0.9rem, 1.3rem);
     letter-spacing: -0.5px;
 }
 
@@ -216,11 +215,11 @@ nav ul li {
 
 .textoSobre h2 {
     color: var(--cor04);
-    font-size: clamp(2rem, 3vw, 3rem);
+    font-size: clamp(1.5rem, 1.5vw + 1rem, 2.2rem);
 }
 
 .textoSobre p {
-    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    font-size: 1rem; 
 }
 
 .containerExperiencias {
@@ -241,11 +240,14 @@ nav ul li {
     transform: translateY(-4px);
 }
 
-.tituloExperienciaProfissional {
+
+.tituloExperienciaProfissional,
+.tituloFormacaoAcademica {
     color: var(--cor04);
     margin-bottom: 20px;
-    font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+    font-size: clamp(1rem, 1vw, 1.1rem);
 }
+
 
 .cardExperienciaProfissional {
     display: grid;
@@ -313,12 +315,6 @@ nav ul li {
 
 .formacaoAcademica:hover {
     transform: translateY(-4px);
-}
-
-.tituloFormacaoAcademica {
-    color: var(--cor04);
-    margin-bottom: 20px;
-    font-size: clamp(0.8rem, 1.5vw, 1.1rem);
 }
 
 .containerProjetos {
