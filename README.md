@@ -11,13 +11,13 @@ Portfólio profissional desenvolvido com HTML, CSS e JavaScript.
 ## Preview
 
 ### Página Home
-![paginaHome](assets/screenshots/paginaHome.png)
+![paginaHome](assets/screnshoots/paginaHome.png)
 
 ### Sobre Mim
-![paginaSobre](assets/screenshots/paginaSobre.png)
+![paginaSobre](assets/screnshoots/paginaSobre.png)
 
 ### Experiências
-![paginaExperiencias](assets/screenshots/paginaExperiencias.png)
+![paginaExperiencias](assets/screnshoots/paginaExperiencias.png)
 
 ### Projetos
-![paginaProjetos](assets/screenshots/paginaProjetos.png)
+![paginaProjetos](assets/screnshoots/paginaProjetos.png)
