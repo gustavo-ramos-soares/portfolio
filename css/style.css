@@ -1,0 +1,422 @@
+@charset "UTF-8";
+
+:root {
+    --cor-black: #1f1f1f;
+    --cor01: #0a0a0a;
+    --cor-white: #fafafa;
+    --cor02: #18d26e;
+    --cor04: #00a2ff;
+    --cor05: #9aa0a6;
+    --cor06: #6b7280;
+    --cor07: rgba(0, 162, 255, 0.1);
+
+    --fonte_padrão: Arial, Helvetica, sans-serif;
+    --fonte_destaque: "Fira Code", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: var(--cor01);
+    font-family: var(--fonte_padrão);
+}
+
+#container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows:
+        70px 1fr 70px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: var(--cor01);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+header .containerSecao {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--cor04);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: clamp(1rem, 1vw, 1.1rem);
+}
+
+.linksHeader {
+    color: var(--cor04);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.linksHeader:hover {
+    color: var(--cor02);
+}
+
+.btnHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#themeToggle {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.btnTema {
+    padding: 5px;
+    margin: 0 auto;
+    background-color: var(--cor01);
+    border: none;
+    cursor: pointer;
+}
+
+.containerSecao {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerHome {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulosHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulosHome h1 {
+    color: var(--cor-white);
+    font-size: clamp(2.3rem, 4vw, 4.5rem);
+}
+
+.titulosHome h2 {
+    color: var(--cor02);
+    font-size: clamp(1rem, 2.5vw, 1.7rem);
+    margin-top: 8px;
+}
+
+.contatosHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.containerSobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.imagemSobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemSobre img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px dotted var(--cor04);
+}
+
+.textoSobre {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.textoSobre h2 {
+    color: var(--cor04);
+    font-size: clamp(2rem, 3vw, 3.2rem);
+}
+
+.textoSobre p {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+}
+
+.containerExperiencias {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.experienciaProfissional {
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+
+.tituloExperienciaProfissional {
+    color: var(--cor04);
+    margin-bottom: 20px;
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+
+.cardExperienciaProfissional {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.cardFormacaoAcademica {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.cardExperiencia {
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.cardExperiencia ul {
+    margin-top: 15px;
+}
+
+.cardExperiencia li {
+    margin-bottom: 10px;
+}
+
+.cardExperiencia h3 {
+    color: var(--cor02);
+    margin-bottom: 4px;
+    font-size: clamp(0.9rem, 2.1vw, 1.3rem);
+}
+
+.cardExperiencia h4 {
+    color: var(--cor05);
+    font-weight: normal;
+    margin-bottom: 4px;
+    font-size: clamp(0.8rem, 1vw, 1.1rem)
+}
+
+.cardExperiencia h5 {
+    color: var(--cor06);
+    margin-bottom: 15px;
+    font-size: clamp(0.8rem, 1vw, 1rem)
+}
+
+.cardExperiencia ul li {
+    font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.experienciaProfissional,
+.formacaoAcademica,
+.containerProjetos {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.formacaoAcademica {
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.tituloFormacaoAcademica {
+    color: var(--cor04);
+    margin-bottom: 20px;
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+
+.containerProjetos {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+
+.tituloProjetos {
+    color: var(--cor04);
+    padding: 20px;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.cardsProjetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+}
+
+.cardConteudoProjetos {
+    background-color: rgba(255, 255, 255, 0.03);
+    box-shadow: 1px 2.5px 1px rgba(66, 65, 65, 0.514);
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    min-height: 200px;
+    grid-template-rows: auto 1fr auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cardConteudoProjetos a {
+    padding: 5px;
+    border: 1px solid var(--cor02);
+    color: var(--cor-white);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.cardMe a {
+    padding: 5px;
+    border: 1px solid var(--cor04);
+    border-radius: 8px;
+    color: var(--cor-white);
+}
+
+.cardConteudoProjetos p {
+    padding: 10px 0;
+}
+
+.cardConteudoProjetos h2 {
+    color: var(--cor02);
+}
+
+.cardConteudoProjetos a::before {
+    content: "< ";
+    color: var(--cor02);
+}
+
+.cardConteudoProjetos a::after {
+    content: " />";
+    color: var(--cor02);
+}
+
+.cardMe a::before {
+    content: "< ";
+    color: var(--cor04);
+}
+
+.cardMe a::after {
+    content: " />";
+    color: var(--cor04);
+}
+
+
+.cardMe p {
+    padding: 15px 0;
+}
+
+.cardMe h2 {
+    color: var(--cor04);
+}
+
+
+.card-title {
+    font-size: clamp(0.8rem, 1.2vw, 1.1rem);
+}
+
+.card-content p {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+}
+
+.card-links a {
+    font-size: clamp(0.5rem, 3vw, 1rem);
+}
+
+article ul li {
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--cor01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-white);
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor-white);
+}
+
+@media (max-width: 768px) {
+    .containerSobre {
+        grid-template-columns: 1fr;
+    }
+
+    .containerExperiencias {
+        grid-template-columns: 1fr;
+    }
+
+    .cardsProjetos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 476px) {
+    .card-links {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
