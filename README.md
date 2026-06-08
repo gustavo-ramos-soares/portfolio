@@ -1,6 +1,6 @@
 # Portfólio
 
-Portfólio profissional desenvolvido com HTML, CSS e JavaScript.
+Portfólio profissional desenvolvido com HTML, CSS e JavaScript, com suporte a tema claro/escuro e layout totalmente responsivo.
 
 ## Tecnologias
 
@@ -29,3 +29,9 @@ Portfólio profissional desenvolvido com HTML, CSS e JavaScript.
 ### Light/Dark Mode
 
 ![Demonstração do tema](assets/screnshoots/light-dark-mode.gif)
+
+### Responsividade
+
+#### Versão Mobile
+
+![Versão Mobile](./screenshots/mobile-view.png)
