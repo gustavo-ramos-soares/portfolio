@@ -8,9 +8,13 @@ Portfólio profissional desenvolvido com HTML, CSS e JavaScript.
 - CSS3
 - JavaScript
 
+## Demonstração
+
+🔗 Acesse o projeto: https://gustavo-ramos-soares.github.io/portfolio/
+
 ## Preview
 
-### Página Home
+### Home
 ![paginaHome](assets/screnshoots/paginaHome.png)
 
 ### Sobre Mim
@@ -21,3 +25,7 @@ Portfólio profissional desenvolvido com HTML, CSS e JavaScript.
 
 ### Projetos
 ![paginaProjetos](assets/screnshoots/paginaProjetos.png)
+
+### Light/Dark Mode
+
+![Demonstração do tema](assets/screnshoots/light-dark-mode.gif)
