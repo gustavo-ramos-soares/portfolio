@@ -34,4 +34,4 @@ Portfólio profissional desenvolvido com HTML, CSS e JavaScript, com suporte a t
 
 #### Versão Mobile
 
-![Versão Mobile](assets/screenshots/versaoMobile.png)
+![Versão Mobile](assets/screnshoots/versaoMobile.png)
