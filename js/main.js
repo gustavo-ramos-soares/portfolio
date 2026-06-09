@@ -1,4 +1,15 @@
 
+// Menu Hamburguer
+const btnMenu = document.getElementById('btnMenu');
+const menu = document.getElementById('menu');
+
+function abrirMenu() {
+    menu.classList.toggle('ativo');
+}
+
+btnMenu.addEventListener('click', abrirMenu);
+
+
 // Dark Theme
 const btn = document.getElementById('btnTema');
 const icon = document.getElementById('themeIcon');

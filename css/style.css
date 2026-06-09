@@ -56,6 +56,27 @@ body.light {
     /* outline: 1px solid red; */
 }
 
+#btnMenuHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnMenu{
+    padding: 5px;
+    margin: 0 auto;
+    background-color: transparent;
+    color: var(--cor06);
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+#menuIcon{
+    color: var(--cor-white);
+    font-size: 32px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -84,7 +105,7 @@ h1,h2,h3,h4 {
 
 header {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns:  1fr;
     background-color: var(--cor01);
     position: sticky;
     top: 0;
@@ -94,7 +115,7 @@ header {
 
 header .containerSecao {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr auto;
 }
 
 nav {
@@ -165,7 +186,7 @@ nav ul li {
 
 .titulosHome h2 {
     color: var(--cor02);
-    font-size: clamp(1rem, 1vw + 0.9rem, 1.3rem);
+    font-size: clamp(1rem, 1vw + 0.8rem, 1.3rem);
     letter-spacing: -0.5px;
 }
 
@@ -282,7 +303,6 @@ nav ul li {
     color: var(--cor02);
     margin-bottom: 4px;
     font-size: clamp(0.9rem, 2.1vw, 1.2rem);
-    font-weight: 400;
 }
 
 .cardExperiencia h4 {
@@ -473,11 +493,46 @@ footer a {
     .cardsProjetos {
         grid-template-columns: 1fr;
     }
+<<<<<<< HEAD
     
+=======
+    #menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 10px;
+        width: auto;
+        background-color: var(--cor01);
+        border: 1px solid var(--cor04);
+        border-radius: 10px;
+        box-shadow: var(--shadow-card);
+        z-index: 999;
+    }
+
+    #menu.ativo {
+        display: block;
+    }
+
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border: none;
+        padding: 20px;
+    }
+    #btnMenu{
+        display: block;
+    }
+    header .containerSecao{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+>>>>>>> e79f5dc (adicionar menu hambúrguer responsivo e dark mode)
 }
 
 @media (max-width: 476px) {
-    .card-links {
+    #card-links {
         display: grid;
         grid-template-rows: repeat(3, auto);
         justify-content: flex-start;
