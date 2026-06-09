@@ -102,17 +102,19 @@ h4 {
 
 #container {
     min-height: 100vh;
-    display: grid;
-    grid-template-rows:
-        70px 1fr 70px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
 }
 
 header {
     display: grid;
     grid-template-columns: 1fr;
     background-color: var(--cor01);
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
+    min-height: 70px;
     z-index: 1000;
     border-bottom: 1px dashed var(--borderHeaderFoot);
 }
@@ -476,6 +478,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 70px;
     color: var(--cor-white);
     border-top: 1px dashed var(--borderHeaderFoot);
 }
