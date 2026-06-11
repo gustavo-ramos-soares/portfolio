@@ -15,7 +15,7 @@
     --cor07: rgba(0, 162, 255, 0.1);
 
     --card-bg: rgba(255, 255, 255, 0.03);
-    --shadow-card: 0 0 20px rgba(255, 255, 255, 0.05);
+    --shadow-card: 0 8px 20px rgba(0, 0, 0, 0.15);
     --borderHeaderFoot: rgba(255, 255, 255, 0.1);
     --border-color: rgba(255, 255, 255, 0.05);
 
@@ -31,7 +31,7 @@ body.light {
     --cor06: #666;
 
     --card-bg: rgba(0, 0, 0, 0.05);
-    --shadow-card: 0 0 15px rgba(0, 0, 0, 0.1);
+    --shadow-card: 0 8px 20px rgba(0, 0, 0, 0.08);
     --borderHeaderFoot: rgba(0, 0, 0, 0.173);
     --border-color: rgba(0, 0, 0, 0.08);
 }
@@ -204,7 +204,7 @@ nav ul li {
 }
 
 .contatosHome a {
-    font-size: 32px;
+    font-size: clamp(32px, 3vw, 40px);
     color: var(--cor-white);
     transition: 0.3s;
 }
@@ -230,8 +230,17 @@ nav ul li {
     width: 100%;
     max-width: 450px;
     height: auto;
-    border-radius: 50%;
-    border: 4px dotted var(--cor04);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 162, 255, 0.2);
+}
+
+.imagemSobre img {
+    transition: all 0.3s ease;
+}
+
+.imagemSobre img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18), 0 0 15px rgba(0, 162, 255, 0.15);
 }
 
 .textoSobre {
@@ -263,13 +272,17 @@ nav ul li {
     padding: 20px;
     box-shadow: var(--shadow-card);
     border-radius: 20px;
+}
+
+
+.cardConteudoProjetos {
     transition: all 0.3s ease;
 }
 
-.experienciaProfissional:hover {
-    transform: translateY(-4px);
+.cardConteudoProjetos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18), 0 0 12px rgba(0, 162, 255, 0.12);
 }
-
 
 .tituloExperienciaProfissional,
 .tituloFormacaoAcademica {
@@ -294,7 +307,7 @@ nav ul li {
 .cardExperiencia {
     background-color: var(--card-bg);
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .cardExperiencia ul {
@@ -309,11 +322,12 @@ nav ul li {
     color: var(--cor02);
     margin-bottom: 4px;
     font-size: clamp(0.9rem, 2.1vw, 1.2rem);
+    font-weight: 400;
 }
 
 .cardExperiencia h4 {
     color: var(--cor05);
-    font-weight: normal;
+    font-weight: 600;
     margin-bottom: 4px;
     font-size: clamp(0.8rem, 1vw, 1.1rem)
 }
@@ -321,7 +335,7 @@ nav ul li {
 .cardExperiencia h5 {
     color: var(--cor06);
     margin-bottom: 15px;
-    font-size: clamp(0.8rem, 1vw, 1rem)
+    font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
 .cardExperiencia ul li {
@@ -340,11 +354,6 @@ nav ul li {
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    transition: all 0.3s ease;
-}
-
-.formacaoAcademica:hover {
-    transform: translateY(-4px);
 }
 
 .containerProjetos {
@@ -352,11 +361,6 @@ nav ul li {
     grid-template-columns: 1fr;
     box-shadow: var(--shadow-card);
     border-radius: 20px;
-    transition: all 0.3s ease;
-}
-
-.containerProjetos:hover {
-    transform: translateY(-4px);
 }
 
 .tituloProjetos {
@@ -406,6 +410,7 @@ nav ul li {
 
 .cardConteudoProjetos h2 {
     color: var(--cor02);
+    font-weight: 400;
 }
 
 .cardConteudoProjetos a::before {
@@ -539,7 +544,7 @@ footer a {
 
 
 @media (max-width: 476px) {
-    #card-links {
+    .card-links {
         display: grid;
         grid-template-rows: repeat(3, auto);
         justify-content: flex-start;
