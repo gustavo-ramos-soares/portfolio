@@ -1,12 +1,12 @@
 # Portfólio
 
-Portfólio profissional desenvolvido com HTML, CSS e JavaScript, com suporte a tema claro/escuro e layout totalmente responsivo.
+Portfólio profissional desenvolvido com HTML, CSS e JavaScript, com tema claro/escuro e layout totalmente responsivo, criado para apresentar minhas experiências, projetos e habilidades na área de tecnologia.
 
 🔗 Acesse o projeto: https://gustavo-ramos-soares.github.io/portfolio/
 
 ---
 
-## 🚀 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - HTML5
 - CSS3
@@ -16,7 +16,7 @@ Portfólio profissional desenvolvido com HTML, CSS e JavaScript, com suporte a t
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - Tema claro e escuro
 - Layout totalmente responsivo
